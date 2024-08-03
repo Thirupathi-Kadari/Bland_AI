@@ -42,7 +42,7 @@ To make a reminder call using the Bland API, refer to the [Bland_Ai_Integ.ipynb]
 
 ### Setting Up the Flask Server
 
-To set up the Flask server to handle webhooks and store conversations, refer to the [Flask.py](path/to/your/flask_server.py) file in the repository.
+To set up the Flask server to handle webhooks and store conversations, refer to the [Flask.py](https://github.com/Thirupathi-Kadari/Bland_AI/blob/main/Flask.py) file in the repository.
 
 ### Using ngrok for HTTPS
 
