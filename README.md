@@ -38,11 +38,11 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 
 ### Making a Reminder Call
 
-To make a reminder call using the Bland API, refer to the [reminder_call.py](path/to/your/reminder_call.py) file in the repository.
+To make a reminder call using the Bland API, refer to the [Bland_Ai_Integ.py](path/to/your/reminder_call.py) file in the repository.
 
 ### Setting Up the Flask Server
 
-To set up the Flask server to handle webhooks and store conversations, refer to the [flask_server.py](path/to/your/flask_server.py) file in the repository.
+To set up the Flask server to handle webhooks and store conversations, refer to the [Flask.py](path/to/your/flask_server.py) file in the repository.
 
 ### Using ngrok for HTTPS
 
