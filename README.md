@@ -18,6 +18,7 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 - Python 3.6+
 - `requests` library
 - `flask` library
+- `ngrok` (for HTTPS tunneling)
 
 ### Setup
 
@@ -42,6 +43,34 @@ To make a reminder call using the Bland API, refer to the [reminder_call.py](pat
 ### Setting Up the Flask Server
 
 To set up the Flask server to handle webhooks and store conversations, refer to the [flask_server.py](path/to/your/flask_server.py) file in the repository.
+
+### Using ngrok for HTTPS
+
+Since the `remainder_call.py` file requires an HTTPS URL but the Flask server provides only HTTP, you can use ngrok to create an HTTPS tunnel. Follow these steps:
+
+1. Install ngrok:
+    ```sh
+    # On macOS
+    brew install ngrok/ngrok/ngrok
+
+    # On Windows
+    choco install ngrok
+
+    # On Linux
+    snap install ngrok
+    ```
+
+2. Start the Flask server:
+    ```sh
+    python flask_server.py
+    ```
+
+3. In a new terminal, start ngrok to tunnel your Flask server:
+    ```sh
+    ngrok http 5000
+    ```
+
+4. Copy the HTTPS URL provided by ngrok (e.g., `https://<your-subdomain>.ngrok.io`) and use it as the webhook URL in your `reminder_call.py` file.
 
 ## API Documentation
 
@@ -69,5 +98,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
-
