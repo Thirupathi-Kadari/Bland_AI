@@ -31,7 +31,7 @@ payload = {
     },
     "max_duration": 30,  # Maximum duration of the call in seconds
     "record": True,  # Whether to record the call
-    "webhook": "https://b258-2601-8c-4e80-5b30-e4db-8948-7100-7183.ngrok-free.app/webhook",  # Webhook URL to receive call data
+    "webhook": "https://your-webhook-url",  # Webhook URL to receive call data
     "metadata": {},  # Additional metadata for the call
     "summary_prompt": "Summarize the call with 'See you, have a good one'",  # Prompt to summarize the call
     "answered_by_enabled": True  # Whether to enable answered-by detection
@@ -39,7 +39,7 @@ payload = {
 
 # Define the headers with authorization and content type
 headers = {
-    "authorization": "sk-ydo9qfrlwapio8kyjsjjlpwosyzpf9xlgfeniwticjishj4a3m83yugap130j95169",  # API key for authorization
+    "authorization": "YOUR_API_KEY",  # API key for authorization
     "Content-Type": "application/json"  # Content type for the request
 }
 
