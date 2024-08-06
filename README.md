@@ -38,7 +38,7 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 
 ### Making a Reminder Call
 
-To make a reminder call using the Bland API, refer to the [Bland_Ai_Integ.ipynb](https://github.com/Thirupathi-Kadari/Bland_AI/blob/main/Bland_Ai_Integ.ipynb) file in the repository.
+To make a reminder call using the Bland API, refer to the [Bland_Ai_Integ.py](https://github.com/Thirupathi-Kadari/Bland_AI/blob/main/Bland_Ai_Integ.py) file in the repository.
 
 ### Setting Up the Flask Server
 
