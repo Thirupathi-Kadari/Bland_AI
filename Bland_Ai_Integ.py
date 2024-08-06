@@ -1,8 +1,10 @@
 import requests
-
+from dotenv import load_dotenv
+import os
 # Define the URL for the Bland AI API endpoint
+load_dotenv()
 url = "https://api.bland.ai/v1/calls"
-
+api_key= os.environ.get("API_KEY")
 # Define the payload with all the necessary parameters for the API request
 payload = {
     "phone_number": "+19797393588",  # The phone number to which the call will be made
@@ -39,7 +41,7 @@ payload = {
 
 # Define the headers with authorization and content type
 headers = {
-    "authorization": "YOUR_API_KEY",  # API key for authorization
+    "authorization": "api_key",  # API key for authorization
     "Content-Type": "application/json"  # Content type for the request
 }
 
