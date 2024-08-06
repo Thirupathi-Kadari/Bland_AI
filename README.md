@@ -1,5 +1,5 @@
 # Bland_AI
-# AI_Health_Monitoring Calls Project
+## AI_Health_Monitoring Calls Project
 
 This project uses the Bland API to make reminder calls and sets up a Flask server to handle webhooks and store conversations.
 
@@ -8,6 +8,7 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
+- [Webhooks](#webhooks)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -24,7 +25,7 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 
 1. Clone the repository:
     ```sh
-    https://github.com/Thirupathi-Kadari/Bland_AI.git
+    git clone https://github.com/Thirupathi-Kadari/Bland_AI.git
     cd Bland_AI
     ```
 
@@ -46,7 +47,7 @@ To set up the Flask server to handle webhooks and store conversations, refer to 
 
 ### Using ngrok for HTTPS
 
-Since the `remainder_call.py` file requires an HTTPS URL but the Flask server provides only HTTP, you can use ngrok to create an HTTPS tunnel. Follow these steps:
+Since the `Bland_Ai_Integ.py` file requires an HTTPS URL but the Flask server provides only HTTP, you can use ngrok to create an HTTPS tunnel. Follow these steps:
 
 1. Install ngrok:
     ```sh
@@ -70,7 +71,22 @@ Since the `remainder_call.py` file requires an HTTPS URL but the Flask server pr
     ngrok http 5000
     ```
 
-4. Copy the HTTPS URL provided by ngrok (e.g., `https://<your-subdomain>.ngrok.io`) and use it as the webhook URL in your `reminder_call.py` file.
+4. Copy the HTTPS URL provided by ngrok (e.g., `https://<your-subdomain>.ngrok.io`) and use it as the webhook URL in your `Bland_Ai_Integ.py` file.
+
+## Webhooks
+
+### Setting Up the Webhook
+
+To handle incoming webhook data from the Bland API, you'll need to set up a webhook URL in your application. This URL should be publicly accessible over HTTPS. Here’s how to obtain and use the webhook URL:
+
+1. **Create a Webhook URL:**
+   - Use ngrok to expose your local Flask server to the internet. After starting ngrok, it will provide an HTTPS URL (e.g., `https://<your-subdomain>.ngrok.io`).
+
+2. **Update the Webhook URL:**
+   - Copy the ngrok HTTPS URL and update it in your `Bland_Ai_Integ.py` file. This URL will be used by the Bland API to send data to your Flask server.
+
+3. **Handle Webhook Requests:**
+   - Implement logic in your Flask server to process incoming webhook requests. This typically involves parsing the JSON payload sent by the Bland API and taking appropriate action.
 
 ## API Documentation
 
