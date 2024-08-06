@@ -1,5 +1,5 @@
 # Bland_AI
-# Reminder Call Project
+# AI_Health_Monitoring Calls Project
 
 This project uses the Bland API to make reminder calls and sets up a Flask server to handle webhooks and store conversations.
 
@@ -24,8 +24,8 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/reminder-call-project.git
-    cd reminder-call-project
+    https://github.com/Thirupathi-Kadari/Bland_AI.git
+    cd Bland_AI
     ```
 
 2. Install the dependencies:
@@ -38,11 +38,11 @@ This project uses the Bland API to make reminder calls and sets up a Flask serve
 
 ### Making a Reminder Call
 
-To make a reminder call using the Bland API, refer to the [reminder_call.py](path/to/your/reminder_call.py) file in the repository.
+To make a reminder call using the Bland API, refer to the [Bland_Ai_Integ.ipynb](https://github.com/Thirupathi-Kadari/Bland_AI/blob/main/Bland_Ai_Integ.ipynb) file in the repository.
 
 ### Setting Up the Flask Server
 
-To set up the Flask server to handle webhooks and store conversations, refer to the [flask_server.py](path/to/your/flask_server.py) file in the repository.
+To set up the Flask server to handle webhooks and store conversations, refer to the [Flask.py](https://github.com/Thirupathi-Kadari/Bland_AI/blob/main/Flask.py) file in the repository.
 
 ### Using ngrok for HTTPS
 
